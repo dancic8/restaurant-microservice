@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 @Data
 public class BaseEntity {
 
-
     @Id
     @GeneratedValue
     private Long id;

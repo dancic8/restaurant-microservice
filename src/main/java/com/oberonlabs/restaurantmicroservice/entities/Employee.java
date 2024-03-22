@@ -12,7 +12,6 @@ import lombok.*;
 @AllArgsConstructor
 public class Employee extends BaseEntity {
 
-
     @Column
     private String firstName;
     @Column
