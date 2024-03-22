@@ -2,15 +2,17 @@ package com.oberonlabs.restaurantmicroservice.entities;
 
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 @Entity
-@Data
-public class Employee {
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class Employee extends BaseEntity {
 
-    @Id
-    @GeneratedValue
-    private Long id;
+
     @Column
     private String firstName;
     @Column
@@ -19,4 +21,5 @@ public class Employee {
     private String email;
     @ManyToOne
     private Restaurant restaurant;
+
 }

@@ -9,11 +9,8 @@ import java.util.List;
 
 @Entity
 @Data
-public class Restaurant {
+public class Restaurant extends BaseEntity {
 
-
-    @Id
-    private Long id;
     @Column
     private String name;
     @Column
